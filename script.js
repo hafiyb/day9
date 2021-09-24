@@ -121,7 +121,7 @@ var isRotating = 0
 
 setInterval(function(){
     if(isRotating){
-        rotation += 5
+        rotation += 2
         document.getElementById('song-banner').style.transform = `rotate(${rotation}deg)`
     }
 }, 100

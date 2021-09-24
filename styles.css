@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-image: url(images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
+    background-size: cover;
+}
+
+#app{
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    align-items: center;
+}
+
+#player{
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#song-banner{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: contain;
+    border: 10px solid black;
+    background-image: url(images/pressuremachine.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+#banner-mid{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#bar-duration{
+    width: 80%;
+    height: 3px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+#bar-current{
+    height: inherit;
+    background-color: orange;
+}
+
+#song-control{
+    min-width: 300px;
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+
+    
+}
+
+.btn{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.vol-btn{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+}
+
+#song-info{
+    text-align: center;
+    margin: 15px 0;
+}
+
+#song-volume{
+    min-width: 300px;
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#vol-bar{
+    width: 130px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#vol-bar-fill{
+    height: inherit;
+    width: 100%;
+    background-color: orange;
+}
+
+#song-list{
+    margin: 15px;
+    min-width: 300px;
+    width: 100%;
+    height: auto;
+
+}
+
+.songs{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0 10px;
+    transition: all 0.3s;
+}
+
+.songs:hover{
+    transform: scale(1.05)
+}
+
+.songs img{
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+}
+
+.title-song{
+    text-decoration: underline;
+}
+
+#song4{
+    border: 5px solid orange;
+}
+
+@media (min-width:1000px){
+    #app{
+        display: flex;
+        flex-direction: row;
+    } 
+
+    #player{
+        width: 50%;
+    }
+
+    #song-list{
+        width:50%;
+    }
+}

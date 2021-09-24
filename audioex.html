@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio JS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #app{
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .btn{
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #seek-bar{
+            width: 500px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 50px auto;
+
+        }
+
+        #bar-inside{
+            background-color: red;
+            width: 100%;
+            height: inherit;
+            transition: all s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <audio id="my-song" src="audio/littlebit.mp3" controls autoplay loop></audio>
+        <br>
+        <div class="btn" onclick="playSong()"> PLAY </div>
+        <div class="btn" onclick="pauseSong()"> PAUSE </div>
+        <br>
+        <div id="seek-bar">
+            <div id="bar-inside"></div>
+        </div>
+
+        <br>
+        <div class="btn" onclick="getSong(songlist1)">Get song 1</div>
+        <div class="btn" onclick="getSong(songlist2)">Get song 2</div>
+        <p id="songsrc">src</p>
+        <p id="songtitle">title</p>
+        <p id="songartist">artist</p>
+    </div>   
+</body>
+<script src="audioscript.js"></script>
+</html>

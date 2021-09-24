@@ -5,5 +5,45 @@
 }
 
 #container{
-    
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1{
+    line-height: 500px;
+    font-size: 100px;
+    z-index: 1;
+}
+
+#moving-box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0px ;
+    top: 0px ;
+}
+
+#moving-box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 800px ;
+    top: 0px ;
+}
+
+#moving-box3{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 0px ;
+    top: 500px ;
 }
